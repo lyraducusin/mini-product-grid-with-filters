@@ -92,15 +92,15 @@
             }
         }
     }
-    #clearFilters {
-        background-color: $secondary-color;
-        color: $black;
-        padding: 15px 20px;
-        &:hover,
-        &:focus {
-            background-color: $primary-color;
-            color: $white;
-        }
+}
+#clearFilters {
+    background-color: $secondary-color;
+    color: $black;
+    padding: 15px 20px;
+    &:hover,
+    &:focus {
+        background-color: $primary-color;
+        color: $white;
     }
 }
 

@@ -15,21 +15,24 @@ export function initializeModeToggle() {
     ToggleBtn.setAttribute('aria-label', 'Change to dark mode')
   }
 
-  // Handle mode toggle click
+  // mode toggle click
   ToggleBtn.addEventListener('click', () => {
     const isLight = document.body.classList.toggle(toggleClass)
     localStorage.setItem('mode', isLight ? toggleClass : '')
 
-    // Update ARIA label
+    // ARIA label
     ToggleBtn.setAttribute(
       'aria-label',
       isLight ? 'Change to dark mode' : 'Change to light mode'
     )
 
-    // Optional sound
+    // Sound
     if (soundUrl) {
-      const audio = new Audio(soundUrl)
-      audio.play()
+      const audio = new Audio(soundUrl);
+      audio.play().catch(err => {
+        console.warn('Sound failed to play:', err);
+      })
     }
+    
   })
 } 

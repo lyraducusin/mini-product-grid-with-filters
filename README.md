@@ -21,6 +21,7 @@ category and price.
   - Product price
   - “Add to Cart” button
 - Filter products by:
+  - Search Products
   - Category (multi-select)
   - Price range
 - Cart functionality with:
@@ -29,7 +30,7 @@ category and price.
   - Clear cart button
 - Fully mobile-responsive layout
 - Semantic HTML and accessibility-friendly structure
-- Dark/light mode toggle with optional sound
+- Dark/light mode toggle with sound
 - Pagination (6 products per page)
 ---
 
@@ -37,13 +38,18 @@ category and price.
 ## Project Structure
 src/
 ├── images/                # Local product images
+├── sounds/                # Toggle local sound
 ├── data/
-│   └── products.json      # Mock product data
+│   └── products.json      # product data
 ├── js/
 │   ├── app.js             # Main app logic
 │   ├── cart.js            # Cart logic
-│   ├── pagination.js      # Pagination logic
+│   ├── count.js           # Display product counts logic 
+│   ├── dom.js             # Display ALL DOM elements
+│   ├── filters.js         # All Filters logic
 │   └── mode.js            # Dark/light mode toggle
+│   ├── pagination.js      # Pagination logic
+│   ├── products.js        # display grid/products
 ├── styles/
 │   ├── main.scss          # Main Scss import all styles
 │   └── variables.scss     # Variables styles

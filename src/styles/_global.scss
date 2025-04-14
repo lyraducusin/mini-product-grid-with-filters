@@ -56,6 +56,11 @@ header {
 main {
     padding-bottom: 60px;
 }
+footer {
+    background-color: $secondary-color;
+    padding: 10px 0px;
+    color: $black;
+}
 .wrapper {
     max-width: 95%;
     width: 1300px;
@@ -102,6 +107,7 @@ select {
         border-radius: 4px;
     }
 }
+
 //Pagination
 #pagination-controls {
     display: flex;
