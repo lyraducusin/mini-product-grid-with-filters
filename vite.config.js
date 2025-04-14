@@ -8,6 +8,7 @@ export default defineConfig({
       }
     }
   },
+  base: '/mini-product-grid-with-filters/',
   build: {
     outDir: 'dist',
     emptyOutDir: true
