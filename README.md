@@ -20,6 +20,9 @@ category and price.
   - Product image (from local `/images` folder)
   - Product price
   - “Add to Cart” button
+    - "View Cart" Sidebar
+    - Toast message appears below on the bottom when adding products to the cart
+  - "Details" on click popup
 - Filter products by:
   - Search Products
   - Category (multi-select)

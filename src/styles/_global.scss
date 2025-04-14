@@ -26,13 +26,21 @@ body {
                 }
             }
         }
-        .product--card {
-            box-shadow: 0 2px 6px rgba(255, 255, 255, 0.4);
-            background: $black;
-            border: 1px solid $white;
+        .product {
+            &--card {
+                box-shadow: 0 2px 6px rgba(255, 255, 255, 0.4);
+                background: $black;
+                border: 1px solid $white;
+            }
+            &--price {
+                color: $secondary-color;
+            }
         }
         .cart-sidebar {
             background: $black;
+            color: $white;
+        }
+        .quick-view-btn {
             color: $white;
         }
     }

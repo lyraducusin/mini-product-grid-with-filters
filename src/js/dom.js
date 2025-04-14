@@ -2,6 +2,7 @@
 
 export const productGrid = document.getElementById('productGrid')
 export const productTemplate = document.getElementById('productCardTemplate')
+
 export const productSearchInput = document.getElementById('productSearch')
 export const categoryFilter = document.getElementById('categoryFilter')
 export const clearFilterBtn = document.getElementById('clearFilters')

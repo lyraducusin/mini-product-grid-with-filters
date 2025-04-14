@@ -3,72 +3,84 @@
     "name": "Moped",
     "price": 3000.00,
     "image": "bike.webp",
-    "category": "Vehicle"
+    "category": "Vehicle",
+    "description": "A compact and eco-friendly motorbike perfect for city commuting. Enjoy a smooth ride and easy parking wherever you go."
   },
   {
     "name": "Porsche",
     "price": 89000.00,
     "image": "porsche.webp",
-    "category": "Vehicle"
+    "category": "Vehicle",
+    "description": "A high-performance luxury sports car designed for speed, comfort, and style. Ideal for enthusiasts who crave thrilling drives."
   },
   {
     "name": "CD",
     "price": 5.00,
     "image": "cd.webp",
-    "category": "Electronics & Media"
+    "category": "Electronics & Media",
+    "description": "Classic music or data storage in a compact disc. A nostalgic format perfect for collectors or old-school tech lovers."
   },
   {
     "name": "Gold Mirror",
     "price": 100.00,
     "image": "gold-mirror.webp",
-    "category": "Furniture"
+    "category": "Furniture",
+    "description": "A stylish gold-framed mirror that adds elegance and depth to any room. Great for entryways, bedrooms, or vanity spaces."
   },
   {
     "name": "Light Bulb",
     "price": 11.00,
     "image": "light-bulb.webp",
-    "category": "Electronics & Media"
+    "category": "Electronics & Media",
+    "description": "Energy-efficient LED bulb with warm lighting, long lifespan, and ideal for both home and office settings."
   },
   {
     "name": "Mic",
     "price": 55.99,
     "image": "mic.webp",
-    "category": "Electronics & Media"
+    "category": "Electronics & Media",
+    "description": "A high-quality condenser microphone perfect for podcasts, streaming, or home studio recordings with crystal-clear sound."
   },
   {
     "name": "Monitor",
     "price": 300.00,
     "image": "monitor.webp",
-    "category": "Electronics & Media"
+    "category": "Electronics & Media",
+    "description": "A full HD widescreen monitor with sharp resolution, fast refresh rate, and sleek design for work or gaming setups."
   },
   {
     "name": "Unique Mirror",
     "price": 150.00,
     "image": "unique-mirror.webp",
-    "category": "Furniture"
+    "category": "Furniture",
+    "description": "A contemporary mirror with a bold, artistic frame—designed to stand out as a functional and decorative piece."
   },
   {
     "name": "Vintage Coffee",
     "price": 200.00,
     "image": "vintage-coffee-table.webp",
-    "category": "Furniture"
+    "category": "Furniture",
+    "description": "A rustic, vintage-style coffee table made from reclaimed wood. Adds warmth and character to your living space."
   },
   {
     "name": "Vintage Phone",
     "price": 160.00,
     "image": "vintage-phone.webp",
-    "category": "Electronics & Media"
+    "category": "Electronics & Media",
+    "description": "A charming rotary-style phone that brings retro vibes and classic style to any room or collector's shelf."
   },
   {
     "name": "Vintage Watch",
     "price": 500.00,
     "image": "vintage-watch.webp",
-    "category": "Electronics & Media"
+    "category": "Electronics & Media",
+    "description": "An elegant timepiece with a timeless design. This vintage watch adds a touch of sophistication to any look."
   },
   {
     "name": "Motor Bike",
     "price": 60000.00,
     "image": "motorcyle.webp",
-    "category": "Vehicle"
+    "category": "Vehicle",
+    "description": "A powerful motorcycle built for performance and adventure. Whether on the highway or the hills, it’s ready for the ride."
   }
 ]

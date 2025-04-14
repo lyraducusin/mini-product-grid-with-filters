@@ -17,7 +17,7 @@
                 fill="none"
                 viewBox="0 0 82 40"
                 role="img"
-                aria-labelledby="logo Title"
+                focusable="false"
                 >
                 <title id="logoTitle">Logo Title</title>
                 <path fill="#FFD43D" d="M73.365 19.71c0 2.904-2.241 5.31-5.27 5.31-3.03 0-5.228-2.406-5.228-5.31 0-2.905 2.199-5.312 5.228-5.312s5.27 2.407 5.27 5.311Z"></path>
@@ -50,7 +50,7 @@
         <div class="wrapper">
             <h1 class="text-center">Mini Products</h1>
             <div class="wrapper--main flex">
-                <div class="flex flex-column" id="filters" aria-labelledby="filter-heading">
+                <div class="flex flex-column" id="filters">
                     <h2>Filters</h2>
                     <div class="filter-row flex flex-wrap flex-column">
                         <div class="filter-group flex flex-column">
@@ -62,7 +62,7 @@
                             <select id="categoryFilter" name="categoryFilter" multiple aria-label="Category Filter"></select>
                         </div>
                         <div class="filter-group price-range">
-                            <span>Price Range:</label>
+                            <span>Price Range:</span>
                             <div class="range-inputs flex align-center">
                             <label for="minPrice" class="visually-hidden">Min Price</label>
                             <input type="number" id="minPrice" name="minPrice" placeholder="Min" />
@@ -74,7 +74,7 @@
                     </div>
                     <button id="clearFilters" type="button" aria-label="Clear selected filters">Clear Filters</button>
                 </div>
-                <div>
+                <div class="product-container">
                     <p id="productCount" class="product-count" aria-live="polite"></p>
                     <div id="productGrid" role="region" aria-label="Product Grid" class="product text-center">
                         <template id="productCardTemplate">
@@ -82,6 +82,7 @@
                                 <img alt="" class="product--img"/>
                                 <h2 class="product--title"></h2>
                                 <p class="product--price"><span class="visually-hidden">Price:</span> <span class="price"></span></p>
+                                <button type="button" class="quick-view-btn">Details</button>
                                 <button type="button" class="add-to-cart">Add to Cart</button>
                             </div>
                         </template>
@@ -93,6 +94,17 @@
                         <button id="nextPage">Next</button>
                     </div>
                 </div>
+                 <!-- Modal -->
+                <div id="productModal" class="product-modal" hidden aria-hidden="true" role="dialog">
+                    <div class="product-modal--content">
+                        <button class="modal-close" aria-label="Close product details">×</button>
+                        <img id="modalImage"/>
+                        <h2 id="modalTitle"></h2>
+                        <p id="modalPrice"></p>
+                        <p id="modalDescription"></p>
+                    </div>
+                </div>
+                <div id="messageToast" class="message-toast" role="status" aria-live="polite" hidden></div>
             </div>
         </div>
     </main>
