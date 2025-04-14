@@ -1,0 +1,145 @@
+//Global
+@use './variables' as *;
+
+body {
+    background-color: $background-color;
+    color: $black;
+    margin: 0;
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+    //Light Mode
+    &.light-mode {
+        background-color: $background-color;
+        color: $black;
+    }
+    //Dark mode
+    &:not(.light-mode) {
+        background-color: $black;
+        color: $white;
+        header {
+            background-color: $black;
+            svg {
+                .outline {
+                    fill: $white;
+                }
+            }
+        }
+        .product--card {
+            box-shadow: 0 2px 6px rgba(255, 255, 255, 0.4);
+            background: $black;
+            border: 1px solid $white;
+        }
+        .cart-sidebar {
+            background: $black;
+            color: $white;
+        }
+    }
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: $white;
+    padding: 20px 0;
+    border-bottom: 5px solid $secondary-color;
+}
+.utility-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &--toggle {
+        margin-left: 10px;
+    }
+}
+main {
+    padding-bottom: 60px;
+}
+.wrapper {
+    max-width: 95%;
+    width: 1300px;
+    margin: 0 auto;
+    &--main{
+        @media (max-width: 768px) {
+           flex-direction: column;
+        }
+    }
+
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+button {
+    background-color: $primary-color;
+    color: $white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: $border-radius ;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+    font-size: $text-size;
+    font-weight: bold;
+    &:hover,
+    &:focus {
+        background-color: $secondary-color;
+        color: $black;
+    }
+}
+button,
+input,
+select {
+    &:focus {
+        outline: 2px dashed $secondary-color;
+        outline-offset: 4px;
+        border-radius: 4px;
+    }
+}
+//Pagination
+#pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border-radius: 6px;
+        border: 1px solid $light-gray;
+
+        &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        }
+    }
+}
+
+//utilities
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-wrap {
+    flex: wrap;
+}
+.align-center {
+    align-items: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+.text-center {
+    text-align: center;
+}

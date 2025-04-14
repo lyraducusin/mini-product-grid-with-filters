@@ -1,0 +1,188 @@
+//Products Styles
+@use './variables' as *;
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 20px;
+    &--card {
+        background: $white;
+        border-radius: $border-radius;
+        padding: 1rem;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    &--img {
+        max-width: 100%;
+        height: auto;
+    }
+    &--quantity-wrapper {
+        margin: 20px 0;
+        input {
+            width: 15%;
+            border: 1px solid $light-gray;
+            padding: 5px;
+        }
+        .quantity-minus,
+        .quantity-plus {
+            color: $black;
+            background-color: $light-gray;
+            padding: 5px;
+            border-radius: 0;
+        }
+    }
+    button {
+        margin-top: auto;
+    }
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+//Filter Styles
+#filters {
+    gap: 1.5rem;
+    margin: 20px 40px 20px 0;
+    width: 25;
+    h2 {
+        margin: 0;
+    }
+    .filter-row {
+        gap: 2rem;
+        .filter-group {
+            flex: 1 1 50%;
+            label {
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+            select[multiple] {
+                min-height: 100px;
+                padding: 0.5rem;
+                font-size: 1rem;
+                border: 1px solid $light-gray;
+                border-radius: $border-radius ;
+                background-color: $white;
+                resize: none;
+                box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    
+                &:focus {
+                    border-color: $primary-color;
+                    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+                }
+            }
+            input {
+                padding: 5px 10px;
+                border: 1px solid $light-gray;
+                border-radius: $border-radius;
+                font-size: 1rem;
+                &:focus {
+                    border-color: $primary-color;
+                    box-shadow: 0 0 0 2px rgba(0,123,255,0.2);
+                }
+            }
+            .range-inputs {
+                gap: 0.5rem;
+                margin-top: .5rem;
+                input {
+                    width: 100px;
+                }
+            }
+        }
+    }
+    #clearFilters {
+        background-color: $secondary-color;
+        color: $black;
+        padding: 15px 20px;
+        &:hover,
+        &:focus {
+            background-color: $primary-color;
+            color: $white;
+        }
+    }
+}
+
+
+//Cart Sidebar
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background: $white;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    border-left: 1px solid $light-gray;
+    @media (max-width: 768px) {
+        width: 200px;
+    }
+    &.open {
+        right: 0;
+    }
+    h2 {
+        margin-top: 0;
+    }
+    .cart-items {
+        list-style: none;
+        padding: 0;
+        margin: 3rem 0;
+        li {
+            margin-bottom: 0.75rem;
+            border-top: 1px solid $primary-color;
+            padding: 10px 0;
+            span {
+                font-weight: 700;
+            }
+        }
+        .quantity {
+            padding: 0 10px;
+        }
+        .remove-from-cart {
+            margin-left: 5px;
+        }
+    }
+    .cart-footer {
+        border-top: 1px solid $light-gray;
+        padding-top: 1rem;
+    }
+    
+    button {
+        margin-top: 1rem;
+        background: $red;
+        color: $white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+  
+        &:hover,
+        &:focus {
+            background: $secondary-color;
+        }
+        @media (max-width: 768px) {
+            padding: 0.5rem;
+        }
+    }
+}
+
+.close-cart {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: $light-gray;
+    &:hover,
+    &:focus {
+      color: $black;
+    }
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
+}

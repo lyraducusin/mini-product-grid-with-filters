@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Moped",
+    "price": 3000.00,
+    "image": "bike.webp",
+    "category": "Vehicle"
+  },
+  {
+    "name": "Porsche",
+    "price": 89000.00,
+    "image": "porsche.webp",
+    "category": "Vehicle"
+  },
+  {
+    "name": "CD",
+    "price": 5.00,
+    "image": "cd.webp",
+    "category": "Electronics & Media"
+  },
+  {
+    "name": "Gold Mirror",
+    "price": 100.00,
+    "image": "gold-mirror.webp",
+    "category": "Furniture"
+  },
+  {
+    "name": "Light Bulb",
+    "price": 11.00,
+    "image": "light-bulb.webp",
+    "category": "Electronics & Media"
+  },
+  {
+    "name": "Mic",
+    "price": 55.99,
+    "image": "mic.webp",
+    "category": "Electronics & Media"
+  },
+  {
+    "name": "Monitor",
+    "price": 300.00,
+    "image": "monitor.webp",
+    "category": "Electronics & Media"
+  },
+  {
+    "name": "Unique Mirror",
+    "price": 150.00,
+    "image": "unique-mirror.webp",
+    "category": "Furniture"
+  },
+  {
+    "name": "Vintage Coffee",
+    "price": 200.00,
+    "image": "vintage-coffee-table.webp",
+    "category": "Furniture"
+  },
+  {
+    "name": "Vintage Phone",
+    "price": 160.00,
+    "image": "vintage-phone.webp",
+    "category": "Electronics & Media"
+  },
+  {
+    "name": "Vintage Watch",
+    "price": 500.00,
+    "image": "vintage-watch.webp",
+    "category": "Electronics & Media"
+  },
+  {
+    "name": "Motor Bike",
+    "price": 60000.00,
+    "image": "motorcyle.webp",
+    "category": "Vehicle"
+  }
+]
